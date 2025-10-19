@@ -1,8 +1,7 @@
-import React from 'react';
 import { useTheme } from '../theme/ThemeProvider';
 
-export function ThemeToggle(): JSX.Element {
-  const { theme, cycleTheme } = useTheme();
+export function ThemeToggle() {
+  const { cycleTheme } = useTheme();
   return (
     <button id="themeToggle" className="theme-toggle" aria-label="Toggle theme" title="Toggle theme" onClick={cycleTheme}>
       {/* Simple sun/moon UI using current CSS icon styles */}

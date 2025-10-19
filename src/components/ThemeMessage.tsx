@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useTheme } from '../theme/ThemeProvider';
 
-export function ThemeMessage(): JSX.Element | null {
+export function ThemeMessage() {
   const { theme } = useTheme();
   const [visible, setVisible] = useState(false);
 

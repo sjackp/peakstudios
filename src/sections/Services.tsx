@@ -1,6 +1,4 @@
-import React from 'react';
-
-export function Services(): JSX.Element {
+export function Services() {
   return (
     <section id="services" className="section dark">
       <div className="container">

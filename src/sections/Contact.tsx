@@ -1,6 +1,4 @@
-import React from 'react';
-
-export function Contact(): JSX.Element {
+export function Contact() {
   const SITE_EMAIL = 'hello@peakstudios.io';
   function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();

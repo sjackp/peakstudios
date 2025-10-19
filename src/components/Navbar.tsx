@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 
-export function Navbar(): JSX.Element {
+export function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -13,7 +13,7 @@ export function Navbar(): JSX.Element {
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
-  function handleQuoteClick(e: React.MouseEvent<HTMLButtonElement>) {
+  function handleQuoteClick(e: React.MouseEvent<HTMLButtonElement, MouseEvent>) {
     e.preventDefault();
     setMobileOpen(false);
     const el = document.getElementById('contact');

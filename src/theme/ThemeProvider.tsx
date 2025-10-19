@@ -1,4 +1,4 @@
-import React, { createContext, useCallback, useContext, useEffect, useMemo, useState } from 'react';
+import { createContext, useCallback, useContext, useEffect, useMemo, useState, ReactNode } from 'react';
 
 type ThemeName = 'dark' | 'light' | 'neon';
 
@@ -13,7 +13,7 @@ const ThemeContext = createContext<ThemeContextValue | undefined>(undefined);
 const THEME_KEY = 'theme';
 const THEMES: ThemeName[] = ['dark', 'light', 'neon'];
 
-export function ThemeProvider({ children }: { children: React.ReactNode }): JSX.Element {
+export function ThemeProvider({ children }: { children: ReactNode }) {
   const [theme, setThemeState] = useState<ThemeName>(() => {
     const saved = (typeof window !== 'undefined' && localStorage.getItem(THEME_KEY)) as ThemeName | null;
     return (saved && THEMES.includes(saved)) ? saved : 'dark';

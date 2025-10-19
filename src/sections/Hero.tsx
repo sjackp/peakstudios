@@ -1,6 +1,4 @@
-import React from 'react';
-
-export function Hero(): JSX.Element {
+export function Hero() {
   const VIMEO_VIDEO_ID = 'VIMEO_VIDEO_ID'; // replace later
   return (
     <section id="home" className="hero">

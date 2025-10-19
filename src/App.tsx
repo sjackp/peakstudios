@@ -1,4 +1,3 @@
-import React from 'react';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import ThemeToggle from './components/ThemeToggle';
@@ -8,7 +7,7 @@ import Services from './sections/Services';
 import About from './sections/About';
 import Contact from './sections/Contact';
 
-function App(): JSX.Element {
+function App() {
   return (
     <main>
       <Navbar />

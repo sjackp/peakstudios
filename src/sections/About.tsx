@@ -1,6 +1,4 @@
-import React from 'react';
-
-export function About(): JSX.Element {
+export function About() {
   return (
     <section id="about" className="section dark">
       <div className="container about-grid">
