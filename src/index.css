@@ -1,0 +1,4 @@
+@import url('./styles/global.css');
+/* Using legacy global.css for design system */
+html { scroll-behavior: smooth; }
+body { margin: 0; }
